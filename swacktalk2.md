@@ -1,14 +1,6 @@
-Building a Discord bot
+# Building a Discord bot
 
-1. Make a Discord server for testing
-2. Register a Discord application
-3. Add the bot to your Discord server
-4. Make a new directory for your project
-5. Installing and using discord.js
-6. EventEmitter basics
-7. Further expansion
-
--- Make a Discord server for testing
+## Make a Discord server for testing
 
 When testing bots for Discord, it's usually a good idea to create a new server
 or guild to keep development spam away from prying eyes.
@@ -18,7 +10,7 @@ hit the plus at the bottom of the server list to create a new server. You can
 name it whatever you want, and for us the region doesn't matter either, so
 usually accepting the default is fine.
 
--- Register a Discord application 
+## Register a Discord application 
 
 A common thing when interacting with external services will be the need to
 register your application so it can communicate with that service.
@@ -35,7 +27,7 @@ Next, scroll down and click Create a Bot User. This informs Discord that we are
 actually writing a bot, and will give us the necessary token to be able to talk
 to Discord from our bot.
 
--- Add the bot to your Discord server
+## Add the bot to your Discord server
 
 On the same page, click the "Generate OAuth 2 URL" button. This will redirect
 you to a tool that will let you generate the URL you need to copy into another
@@ -53,7 +45,7 @@ The generator will pre fill all the fields you need to be able to add the bot,
 Copy the URL that the generator has made for us into another tab or window, and
 click through to allow your bot access to the server you made earlier.
 
--- Installing and using discord.js
+## Installing and using discord.js
 
 Now we get to write some code! Open up your terminal of choice, or PowerShell if
 you're on Windows. Make a new directory for your bot.
@@ -92,7 +84,7 @@ If we now run the code using `node index.js`, we can see it... doesn't do much.
 Well, we can see if we look at Discord that our bot has come online! This means
 that our code is able to connect to and talk to Discord properly
 
--- EventEmitter basics
+## EventEmitter basics
 
 The discord.js Client is what is known as an EventEmitter. This is a pattern
 used extensively in Node, where an object may emit that an event has occurred
@@ -123,7 +115,7 @@ allows us to reply to it using the `.reply` method.
 All in all this makes it so any time someone sends the word "ping" in your
 Discord server, the bot will respond with the word "pong"
 
--- Further expansion
+## Further expansion
 
 With the client being an `EventEmitter`, there are a number of events we can go
 and listen for and react to. A full list can be found in the [discord.js
